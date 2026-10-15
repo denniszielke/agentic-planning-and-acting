@@ -1,0 +1,12 @@
+name: foundry-hypothesis-workflow
+metadata:
+  template: foundry-hypothesis-workflow@0.2.0
+infra:
+  provider: bicep
+  path: ./infra
+hooks:
+  postdeploy:
+    # Foundry-managed state: no customer storage account is provisioned.
+    # Copy generated settings for deployment and invocation scripts.
+    - shell: sh
+      run: cp .azure/$AZURE_ENV_NAME/.env ./

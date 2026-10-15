@@ -1,0 +1,36 @@
+{
+  "name": "hypothesis-ag-ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test:dependencies": "node --test tests/dependencies.test.mjs"
+  },
+  "dependencies": {
+    "@ag-ui/client": "1.0.1",
+    "@ag-ui/core": "1.0.1",
+    "lucide-react": "^1.50.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.2"
+  },
+  "overrides": {
+    "nanoid": "6.0.1",
+    "uuid": "14.0.2",
+    "zod": "4.6.5",
+    "@types/uuid": "11.0.0",
+    "rxjs": "7.8.2"
+  },
+  "engines": {
+    "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+  }
+}

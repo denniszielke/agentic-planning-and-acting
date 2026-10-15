@@ -1,0 +1,20 @@
+{
+  "universe_usage_history": [
+    {
+      "universe": "Alien",
+      "date": "2026-10-09"
+    }
+  ],
+  "assignment_cast_snapshots": {
+    "initial-team": {
+      "universe": "Alien",
+      "members": [
+        "Ripley",
+        "Ash",
+        "Lambert",
+        "Parker",
+        "Kane"
+      ]
+    }
+  }
+}
